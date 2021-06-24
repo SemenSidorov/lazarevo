@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="slick.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+	  $( function() {
+	    $( "#slider-range" ).slider({
+	      range: true,
+	      min: 1000,
+	      max: 50000,
+	      values: [ 1000, 48000 ],
+	      slide: function( event, ui ) {
+	        $( "#amount" ).val( ui.values[ 0 ] );
+	        $( "#amount2" ).val( ui.values[ 1 ] );
+	      }
+	    });
+	    $( "#amount" ).val( $( "#slider-range" ).slider( "values", 0 ) );
+	    $( "#amount2" ).val( $( "#slider-range" ).slider( "values", 0 ) );
+	  } );
+	</script>
+</head>
+<body id="top">
+	<div class="site-menu tabs2 flex">
+		<a class="close"></a>
+		<ul class="tabNavigation">
+			<div class="logo"><img src="img/logo.png"></div>
+			<li><a href="#cat1"><img src="img/tab1.png"> Колбасы варёные</a></li>
+			<li><a href="#cat2"><img src="img/tab2.png"> Ветчина, рулеты</a></li>
+			<li><a href="#cat3"><img src="img/tab3.png"> Копчености и копчено-вареная продукция</a></li>
+			<li><a href="#cat4"><img src="img/tab4.png"> Колбасы варёно-копчёные и полукопчёные</a></li>
+			<li><a href="#cat5"><img src="img/tab5.png"> Сало, шпик</a></li>
+			<li><a href="#cat6"><img src="img/tab6.png"> Полуфабрикаты</a></li>
+			<li><a href="#cat7"><img src="img/tab7.png"> Субпродукты</a></li>
+			<li><a href="#cat8"><img src="img/tab8.png"> Мясо</a></li>
+			<li><a href="#cat9"><img src="img/tab9.png"> Сосиски, сардельки</a></li>
+			<li><a href="#cat10"><img src="img/tab10.png"> Молочная продукция</a></li>
+		</ul>
+		<div id="cat1" class="tab-content">
+			<form>
+				<input type="text" placeholder="Поиск по товарам">
+				<input type="submit" value="">
+			</form>
+			<div class="list flex">
+				<div class="item">
+					<div class="image">
+						<img src="img/item.jpg">
+					</div>
+					<div class="name">
+						Колбаса вареная «Докторская» (полиамид)
+					</div>
+					<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+					<a href="#" class="more">Подробнее</a>
+					<div class="flex">
+						<div class="price">
+							<span class="old">4 990 ₽</span> <br/>
+							<span class="new">3 990 ₽</span> / за кг
+						</div>
+						<a href="#" class="tocart"></a>
+					</div>
+					<div class="items">
+						<span>Колбасы варёно-копчёные и полукопчёные</span>
+					</div>
+					<a href="#" class="link"></a>
+				</div>
+				<div class="item">
+					<div class="image">
+						<img src="img/item.jpg">
+					</div>
+					<div class="name">
+						Колбаса вареная «Докторская» (полиамид)
+					</div>
+					<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+					<a href="#" class="more">Подробнее</a>
+					<div class="flex">
+						<div class="price">
+							<span class="old">4 990 ₽</span> <br/>
+							<span class="new">3 990 ₽</span> / за кг
+						</div>
+						<a href="#" class="tocart"></a>
+					</div>
+					<div class="items">
+						<span>Колбасы варёно-копчёные и полукопчёные</span>
+					</div>
+					<a href="#" class="link"></a>
+				</div>
+				<div class="item">
+					<div class="image">
+						<img src="img/item.jpg">
+					</div>
+					<div class="name">
+						Колбаса вареная «Докторская» (полиамид)
+					</div>
+					<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+					<a href="#" class="more">Подробнее</a>
+					<div class="flex">
+						<div class="price">
+							<span class="old">4 990 ₽</span> <br/>
+							<span class="new">3 990 ₽</span> / за кг
+						</div>
+						<a href="#" class="tocart"></a>
+					</div>
+					<div class="items">
+						<span>Колбасы варёно-копчёные и полукопчёные</span>
+					</div>
+					<a href="#" class="link"></a>
+				</div>
+				<div class="item">
+					<div class="image">
+						<img src="img/item.jpg">
+					</div>
+					<div class="name">
+						Колбаса вареная «Докторская» (полиамид)
+					</div>
+					<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+					<a href="#" class="more">Подробнее</a>
+					<div class="flex">
+						<div class="price">
+							<span class="old">4 990 ₽</span> <br/>
+							<span class="new">3 990 ₽</span> / за кг
+						</div>
+						<a href="#" class="tocart"></a>
+					</div>
+					<div class="items">
+						<span>Колбасы варёно-копчёные и полукопчёные</span>
+					</div>
+					<a href="#" class="link"></a>
+				</div>
+				<div class="item">
+					<div class="image">
+						<img src="img/item.jpg">
+					</div>
+					<div class="name">
+						Колбаса вареная «Докторская» (полиамид)
+					</div>
+					<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+					<a href="#" class="more">Подробнее</a>
+					<div class="flex">
+						<div class="price">
+							<span class="old">4 990 ₽</span> <br/>
+							<span class="new">3 990 ₽</span> / за кг
+						</div>
+						<a href="#" class="tocart"></a>
+					</div>
+					<div class="items">
+						<span>Колбасы варёно-копчёные и полукопчёные</span>
+					</div>
+					<a href="#" class="link"></a>
+				</div>
+				<div class="item">
+					<div class="image">
+						<img src="img/item.jpg">
+					</div>
+					<div class="name">
+						Колбаса вареная «Докторская» (полиамид)
+					</div>
+					<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+					<a href="#" class="more">Подробнее</a>
+					<div class="flex">
+						<div class="price">
+							<span class="old">4 990 ₽</span> <br/>
+							<span class="new">3 990 ₽</span> / за кг
+						</div>
+						<a href="#" class="tocart"></a>
+					</div>
+					<div class="items">
+						<span>Колбасы варёно-копчёные и полукопчёные</span>
+					</div>
+					<a href="#" class="link"></a>
+				</div>
+				<div class="item">
+					<div class="image">
+						<img src="img/item.jpg">
+					</div>
+					<div class="name">
+						Колбаса вареная «Докторская» (полиамид)
+					</div>
+					<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+					<a href="#" class="more">Подробнее</a>
+					<div class="flex">
+						<div class="price">
+							<span class="old">4 990 ₽</span> <br/>
+							<span class="new">3 990 ₽</span> / за кг
+						</div>
+						<a href="#" class="tocart"></a>
+					</div>
+					<div class="items">
+						<span>Колбасы варёно-копчёные и полукопчёные</span>
+					</div>
+					<a href="#" class="link"></a>
+				</div>
+				<div class="item">
+					<div class="image">
+						<img src="img/item.jpg">
+					</div>
+					<div class="name">
+						Колбаса вареная «Докторская» (полиамид)
+					</div>
+					<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+					<a href="#" class="more">Подробнее</a>
+					<div class="flex">
+						<div class="price">
+							<span class="old">4 990 ₽</span> <br/>
+							<span class="new">3 990 ₽</span> / за кг
+						</div>
+						<a href="#" class="tocart"></a>
+					</div>
+					<div class="items">
+						<span>Колбасы варёно-копчёные и полукопчёные</span>
+					</div>
+					<a href="#" class="link"></a>
+				</div>
+				<div class="item">
+					<div class="image">
+						<img src="img/item.jpg">
+					</div>
+					<div class="name">
+						Колбаса вареная «Докторская» (полиамид)
+					</div>
+					<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+					<a href="#" class="more">Подробнее</a>
+					<div class="flex">
+						<div class="price">
+							<span class="old">4 990 ₽</span> <br/>
+							<span class="new">3 990 ₽</span> / за кг
+						</div>
+						<a href="#" class="tocart"></a>
+					</div>
+					<div class="items">
+						<span>Колбасы варёно-копчёные и полукопчёные</span>
+					</div>
+					<a href="#" class="link"></a>
+				</div>
+				<div class="item">
+					<div class="image">
+						<img src="img/item.jpg">
+					</div>
+					<div class="name">
+						Колбаса вареная «Докторская» (полиамид)
+					</div>
+					<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+					<a href="#" class="more">Подробнее</a>
+					<div class="flex">
+						<div class="price">
+							<span class="old">4 990 ₽</span> <br/>
+							<span class="new">3 990 ₽</span> / за кг
+						</div>
+						<a href="#" class="tocart"></a>
+					</div>
+					<div class="items">
+						<span>Колбасы варёно-копчёные и полукопчёные</span>
+					</div>
+					<a href="#" class="link"></a>
+				</div>
+				<div class="item">
+					<div class="image">
+						<img src="img/item.jpg">
+					</div>
+					<div class="name">
+						Колбаса вареная «Докторская» (полиамид)
+					</div>
+					<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+					<a href="#" class="more">Подробнее</a>
+					<div class="flex">
+						<div class="price">
+							<span class="old">4 990 ₽</span> <br/>
+							<span class="new">3 990 ₽</span> / за кг
+						</div>
+						<a href="#" class="tocart"></a>
+					</div>
+					<div class="items">
+						<span>Колбасы варёно-копчёные и полукопчёные</span>
+					</div>
+					<a href="#" class="link"></a>
+				</div>
+				<div class="item">
+					<div class="image">
+						<img src="img/item.jpg">
+					</div>
+					<div class="name">
+						Колбаса вареная «Докторская» (полиамид)
+					</div>
+					<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+					<a href="#" class="more">Подробнее</a>
+					<div class="flex">
+						<div class="price">
+							<span class="old">4 990 ₽</span> <br/>
+							<span class="new">3 990 ₽</span> / за кг
+						</div>
+						<a href="#" class="tocart"></a>
+					</div>
+					<div class="items">
+						<span>Колбасы варёно-копчёные и полукопчёные</span>
+					</div>
+					<a href="#" class="link"></a>
+				</div>
+			</div>
+			<div class="button">
+				<a href="#">Перейти в каталог</a>
+			</div>
+		</div>
+		<div id="cat2" class="tab-content">
+			<form>
+				<input type="text" placeholder="Поиск по товарам">
+				<input type="submit" value="">
+			</form>
+			222
+		</div>
+		<div id="cat3" class="tab-content">
+			<form>
+				<input type="text" placeholder="Поиск по товарам">
+				<input type="submit" value="">
+			</form>
+			333
+		</div>
+		<div id="cat4" class="tab-content">
+			<form>
+				<input type="text" placeholder="Поиск по товарам">
+				<input type="submit" value="">
+			</form>
+			444
+		</div>
+		<div id="cat5" class="tab-content">
+			<form>
+				<input type="text" placeholder="Поиск по товарам">
+				<input type="submit" value="">
+			</form>
+			555
+		</div>
+		<div id="cat6" class="tab-content">
+			<form>
+				<input type="text" placeholder="Поиск по товарам">
+				<input type="submit" value="">
+			</form>
+			666
+		</div>
+		<div id="cat7" class="tab-content">
+			<form>
+				<input type="text" placeholder="Поиск по товарам">
+				<input type="submit" value="">
+			</form>
+			777
+		</div>
+		<div id="cat8" class="tab-content">
+			<form>
+				<input type="text" placeholder="Поиск по товарам">
+				<input type="submit" value="">
+			</form>
+			888
+		</div>
+		<div id="cat9" class="tab-content">
+			<form>
+				<input type="text" placeholder="Поиск по товарам">
+				<input type="submit" value="">
+			</form>
+			999
+		</div>
+		<div id="cat10" class="tab-content">
+			<form>
+				<input type="text" placeholder="Поиск по товарам">
+				<input type="submit" value="">
+			</form>
+			101010
+		</div>
+	</div>
+	<div class="menubg"></div>
+	<header class="header">
+		<div class="wrap flex">
+			<div class="menu-button"></div>
+			<div class="logo">
+				<a href="#"><img src="img/logo.png"></a>
+			</div>
+			<div class="adress">
+				<a href="#"></a>
+				Тульская обл, Щёкинский район, <br/>
+				п. Лазарево, ул. Луговая, д. 1
+			</div>
+			<a href="tel:+74875172251" class="phone">+7 (48751) 72-251</a>
+			<a href="tel:+74875172288" class="phone">+7 (48751) 72-288</a>
+			<a href="mailto:info@lazarevo.ru" class="mail">info@lazarevo.ru</a>
+			<div class="phones">
+				<a href="tel:+74875172251">+7 (48751) 72-251</a>
+				<a href="tel:+74875172288">+7 (48751) 72-288</a>
+			</div>
+			<div class="links">
+				<a href="#"></a>
+				<a href="#"><span>5</span></a>
+				<a href="#"><span>10</span></a>
+			</div>
+			<a class="search-link"></a>
+		</div>
+	</header>
+	<nav class="top-menu">
+		<div class="wrap">
+			<ul class="flex">
+				<li><a class="catalog-link"><span></span> Наша продукция</a></li>
+				<li><a href="#">На главную</a></li>
+				<li><a href="#">О компании <i class="fa fa-angle-down"></i></a></li>
+				<li><a href="#">Наши магазины</a></li>
+				<li><a href="#">Наше производство</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="wrap">
+		<form class="top-page-search">
+			<input type="text" placeholder="Поиск по товарам">
+			<input type="submit" value="">
+		</form>
+	</div>
+	<div class="navi">
+		<div class="wrap">
+			<a href="#">Главная</a> <i class="fa fa-angle-right"></i> Каталог
+		</div>
+	</div>
+	<div class="wrap">
+		<div class="catalog-page">
+			<div class="flex">
+				<div class="filter">
+					<div class="block-name">
+						Фильтры
+					</div>
+					<div class="item">
+						<div class="name">
+							Цена, ₽ <i class="fa fa-angle-down"></i>
+						</div>
+						<div class="select">
+							<div class="price-select">
+								<div id="slider-range"></div>
+								<div class="flex">
+									<input type="text" id="amount" readonly>
+									<input type="text" id="amount2" readonly>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="name">
+							Бренд <i class="fa fa-angle-down"></i>
+						</div>
+						<div class="select">
+							<input type="checkbox" class="checkbox" id="ch1"><label for="ch1">Колбасы варёные</label>
+							<input type="checkbox" class="checkbox" id="ch2"><label for="ch2">Ветчина, рулеты</label>
+							<input type="checkbox" class="checkbox" id="ch3"><label for="ch3">Копчености и копчено-вареная продукция</label>
+							<input type="checkbox" class="checkbox" id="ch4"><label for="ch4">Колбасы варёно-копчёные и полукопчёные</label>
+							<input type="checkbox" class="checkbox" id="ch5"><label for="ch5">Сало, шпик</label>
+							<input type="checkbox" class="checkbox" id="ch6"><label for="ch6">Полуфабрикаты</label>
+							<input type="checkbox" class="checkbox" id="ch7"><label for="ch7">Субпродукты</label>
+							<input type="checkbox" class="checkbox" id="ch8"><label for="ch8">Мясо</label>
+							<input type="checkbox" class="checkbox" id="ch9"><label for="ch9">Сосиски, сардельки</label>
+							<input type="checkbox" class="checkbox" id="ch10"><label for="ch10">Молочная продукция</label>
+						</div>
+					</div>
+					<div class="item">
+						<div class="name">
+							Товары со скидкой <i class="fa fa-angle-down"></i>
+						</div>
+						<div class="select">
+							<input type="radio" class="radio" id="r1" name="r1"><label for="r1">Любой</label>
+							<input type="radio" class="radio" id="r2" name="r1"><label for="r2">5% и больше23</label>
+							<input type="radio" class="radio" id="r3" name="r1"><label for="r3">10% и больше20</label>
+							<input type="radio" class="radio" id="r4" name="r1"><label for="r4">20% и больше11</label>
+							<input type="radio" class="radio" id="r5" name="r1"><label for="r5">35% и больше</label>
+						</div>
+					</div>
+					<div class="item">
+						<div class="select">
+							<input type="submit" value="Показать">
+							<input type="reset" value="Сбросить">
+						</div>
+					</div>
+				</div>
+				<div class="list">
+					<button class="filter-button"><i class="fa fa-filter"></i> Фильтр</button>
+					<h1>Каталог товаров </h1>
+					<div class="sort">
+						Сортировка:
+						<a href="#" class="active">По цене <i class="fa fa-caret-up"></i></a>
+						<a href="#">Новизне</a>
+						<a href="#">По названию</a>
+					</div>
+					<div class="flex">
+						<div class="item">
+							<div class="badges">
+								<a href="#" class="c1">Акция</a>
+								<a href="#" class="c2">Скидка</a>
+							</div>
+							<div class="image">
+								<img src="img/item.jpg">
+							</div>
+							<div class="name">
+								Колбаса вареная «Докторская» (полиамид)
+							</div>
+							<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+							<a href="#" class="more">Подробнее</a>
+							<div class="flex">
+								<div class="price">
+									<span class="old">4 990 ₽</span> <br/>
+									<span class="new">3 990 ₽</span> / за кг
+								</div>
+								<a href="#" class="tocart"></a>
+							</div>
+							<div class="items">
+								<span>Колбасы варёно-копчёные и полукопчёные</span>
+							</div>
+							<a href="#" class="link"></a>
+						</div>
+						<div class="item fav">
+							<div class="image">
+								<img src="img/item.jpg">
+							</div>
+							<div class="name">
+								Колбаса вареная «Докторская» (полиамид)
+							</div>
+							<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+							<a href="#" class="more">Подробнее</a>
+							<div class="flex">
+								<div class="price">
+									<span class="old">4 990 ₽</span> <br/>
+									<span class="new">3 990 ₽</span> / за кг
+								</div>
+								<a href="#" class="tocart"></a>
+							</div>
+							<div class="items">
+								<span>Колбасы варёно-копчёные и полукопчёные</span>
+							</div>
+							<a href="#" class="link"></a>
+						</div>
+						<div class="item">
+							<div class="image">
+								<img src="img/item.jpg">
+							</div>
+							<div class="name">
+								Колбаса вареная «Докторская» (полиамид)
+							</div>
+							<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+							<a href="#" class="more">Подробнее</a>
+							<div class="flex">
+								<div class="price">
+									<span class="old">4 990 ₽</span> <br/>
+									<span class="new">3 990 ₽</span> / за кг
+								</div>
+								<a href="#" class="tocart"></a>
+							</div>
+							<div class="items">
+								<span>Колбасы варёно-копчёные и полукопчёные</span>
+							</div>
+							<a href="#" class="link"></a>
+						</div>
+						<div class="item">
+							<div class="image">
+								<img src="img/item.jpg">
+							</div>
+							<div class="name">
+								Колбаса вареная «Докторская» (полиамид)
+							</div>
+							<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+							<a href="#" class="more">Подробнее</a>
+							<div class="flex">
+								<div class="price">
+									<span class="old">4 990 ₽</span> <br/>
+									<span class="new">3 990 ₽</span> / за кг
+								</div>
+								<a href="#" class="tocart"></a>
+							</div>
+							<div class="items">
+								<span>Колбасы варёно-копчёные и полукопчёные</span>
+							</div>
+							<a href="#" class="link"></a>
+						</div>
+						<div class="item">
+							<div class="image">
+								<img src="img/item.jpg">
+							</div>
+							<div class="name">
+								Колбаса вареная «Докторская» (полиамид)
+							</div>
+							<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+							<a href="#" class="more">Подробнее</a>
+							<div class="flex">
+								<div class="price">
+									<span class="old">4 990 ₽</span> <br/>
+									<span class="new">3 990 ₽</span> / за кг
+								</div>
+								<a href="#" class="tocart"></a>
+							</div>
+							<div class="items">
+								<span>Колбасы варёно-копчёные и полукопчёные</span>
+							</div>
+							<a href="#" class="link"></a>
+						</div>
+						<div class="item">
+							<div class="image">
+								<img src="img/item.jpg">
+							</div>
+							<div class="name">
+								Колбаса вареная «Докторская» (полиамид)
+							</div>
+							<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+							<a href="#" class="more">Подробнее</a>
+							<div class="flex">
+								<div class="price">
+									<span class="old">4 990 ₽</span> <br/>
+									<span class="new">3 990 ₽</span> / за кг
+								</div>
+								<a href="#" class="tocart"></a>
+							</div>
+							<div class="items">
+								<span>Колбасы варёно-копчёные и полукопчёные</span>
+							</div>
+							<a href="#" class="link"></a>
+						</div>
+						<div class="item">
+							<div class="image">
+								<img src="img/item.jpg">
+							</div>
+							<div class="name">
+								Колбаса вареная «Докторская» (полиамид)
+							</div>
+							<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+							<a href="#" class="more">Подробнее</a>
+							<div class="flex">
+								<div class="price">
+									<span class="old">4 990 ₽</span> <br/>
+									<span class="new">3 990 ₽</span> / за кг
+								</div>
+								<a href="#" class="tocart"></a>
+							</div>
+							<div class="items">
+								<span>Колбасы варёно-копчёные и полукопчёные</span>
+							</div>
+							<a href="#" class="link"></a>
+						</div>
+						<div class="item">
+							<div class="image">
+								<img src="img/item.jpg">
+							</div>
+							<div class="name">
+								Колбаса вареная «Докторская» (полиамид)
+							</div>
+							<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+							<a href="#" class="more">Подробнее</a>
+							<div class="flex">
+								<div class="price">
+									<span class="old">4 990 ₽</span> <br/>
+									<span class="new">3 990 ₽</span> / за кг
+								</div>
+								<a href="#" class="tocart"></a>
+							</div>
+							<div class="items">
+								<span>Колбасы варёно-копчёные и полукопчёные</span>
+							</div>
+							<a href="#" class="link"></a>
+						</div>
+						<div class="item">
+							<div class="image">
+								<img src="img/item.jpg">
+							</div>
+							<div class="name">
+								Колбаса вареная «Докторская» (полиамид)
+							</div>
+							<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+							<a href="#" class="more">Подробнее</a>
+							<div class="flex">
+								<div class="price">
+									<span class="old">4 990 ₽</span> <br/>
+									<span class="new">3 990 ₽</span> / за кг
+								</div>
+								<a href="#" class="tocart"></a>
+							</div>
+							<div class="items">
+								<span>Колбасы варёно-копчёные и полукопчёные</span>
+							</div>
+							<a href="#" class="link"></a>
+						</div>
+						<div class="item">
+							<div class="image">
+								<img src="img/item.jpg">
+							</div>
+							<div class="name">
+								Колбаса вареная «Докторская» (полиамид)
+							</div>
+							<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+							<a href="#" class="more">Подробнее</a>
+							<div class="flex">
+								<div class="price">
+									<span class="old">4 990 ₽</span> <br/>
+									<span class="new">3 990 ₽</span> / за кг
+								</div>
+								<a href="#" class="tocart"></a>
+							</div>
+							<div class="items">
+								<span>Колбасы варёно-копчёные и полукопчёные</span>
+							</div>
+							<a href="#" class="link"></a>
+						</div>
+						<div class="item">
+							<div class="image">
+								<img src="img/item.jpg">
+							</div>
+							<div class="name">
+								Колбаса вареная «Докторская» (полиамид)
+							</div>
+							<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+							<a href="#" class="more">Подробнее</a>
+							<div class="flex">
+								<div class="price">
+									<span class="old">4 990 ₽</span> <br/>
+									<span class="new">3 990 ₽</span> / за кг
+								</div>
+								<a href="#" class="tocart"></a>
+							</div>
+							<div class="items">
+								<span>Колбасы варёно-копчёные и полукопчёные</span>
+							</div>
+							<a href="#" class="link"></a>
+						</div>
+						<div class="item">
+							<div class="image">
+								<img src="img/item.jpg">
+							</div>
+							<div class="name">
+								Колбаса вареная «Докторская» (полиамид)
+							</div>
+							<p>ГОСТ Р 52196-2011 <br/>Белок - 12,0 г, Жир - 20,0 г. <br/>Калорийность - 228 ккал.</p>
+							<a href="#" class="more">Подробнее</a>
+							<div class="flex">
+								<div class="price">
+									<span class="old">4 990 ₽</span> <br/>
+									<span class="new">3 990 ₽</span> / за кг
+								</div>
+								<a href="#" class="tocart"></a>
+							</div>
+							<div class="items">
+								<span>Колбасы варёно-копчёные и полукопчёные</span>
+							</div>
+							<a href="#" class="link"></a>
+						</div>
+					</div>
+					<ul class="pages">
+						<li><a href="#">&laquo;</a>
+						<li><a href="#">1</a>
+						<li><a href="#">2</a>
+						<li><a href="#">3</a>
+						<li><a href="#">4</a>
+						<li><a href="#">5</a>
+						<li><a href="#">&raquo;</a>
+					</ul>
+				</div>
+			</div>
+			<div class="bottom-text">
+				<div class="block-name">
+					Наше производство 
+				</div>
+				<p>ООО "ПХ «Лазаревское»" является одним из крупнейших сельскохозяйственных предприятий Тульской области, расположенным в 50-ти км. южнее г. Тулы.</p>
+				<p>Основные виды деятельности – производство и переработка сельскохозяйственной продукции растениеводства и животноводства. <br/>На предприятии трудятся 550 человек рабочих и специалистов.</p>
+				<p>Хозяйство оказывает существенное влияние на развитие отрасли свиноводства не только в Тульском регионе, но и в России: ежегодно поставляет на рынок более 10 000 тонн мяса свиней лучших мясных пород – это около 77 % свинины по Тульской области.</p>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<a href="#top" class="totop"></a>
+		<div class="wrap">
+			<div class="flex">
+				<div class="logo">
+					<a href="#"><img src="img/logo2.png"></a>
+				</div>
+				<ul>
+					<li><a href="#">На главную</a></li>
+					<li><a href="#">О компании</a></li>
+					<li><a href="#">Наши магазины</a></li>
+					<li><a href="#">Наше производство</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Колбасы варёные</a></li>
+					<li><a href="#">Ветчина, рулеты</a></li>
+					<li><a href="#">Копчености и копчено-вареная продукция</a></li>
+					<li><a href="#">Колбасы варёно-копчёные и полукопчёные</a></li>
+					<li><a href="#">Сало, шпик</a></li>
+				</ul>
+				<ul>
+					<li><a href="#">Полуфабрикаты</a></li>
+					<li><a href="#">Субпродукты</a></li>
+					<li><a href="#">Мясо</a></li>
+					<li><a href="#">Сосиски, сардельки</a></li>
+					<li><a href="#">Молочная продукция</a></li>
+				</ul>
+				<div class="dev">
+					Разработка корпоративного сайта <br/>
+					<a href="#">интернет-агентство BREVIS</a>
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="flex">
+				<div class="data">
+					БИК 047003715 <br/>
+					к/с 30101810400000000715 <br/>
+					Код по ОКПО 00567209 <br/>
+					Код по ОКВЭД 01-46 <br/>
+					Код по ОКОНХ 21220
+				</div>
+				<div class="data other">
+					ИНН 7118503160 <br/>
+					КПП 711801001 <br/>
+					ОГРН 1107154005210 <br/>
+					р/с 40702810301080000447 <br/>
+					ТУЛЬСКИЙ РФ АО «РОССЕЛЬХОЗБАНК» г. Тула
+				</div>
+				<div class="payment">
+					<img src="img/payment.png">
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
