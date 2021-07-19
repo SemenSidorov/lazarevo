@@ -31,7 +31,7 @@ function OnOrderNewSendEmailHandler($id, $eventName, $arFields){
 
     $number = (int)preg_replace('/[^0-9]/', '', $user["PERSONAL_PHONE"]);
     $username = "CNT_lzrvsk";
-    $password = "70Me1PQb";
+    $password = "*******";
     $json = [
       "from" => "lazarevskoe",
       "to" => $number,
@@ -72,7 +72,7 @@ function OnOrderNewSendEmailHandler($id, $eventName, $arFields){
 //
 //     $number = (int)preg_replace('/[^0-9]/', '', $user["PERSONAL_PHONE"]);
 //     $username = "CNT_lzrvsk";
-//     $password = "70Me1PQb";
+//     $password = "*******";
 //     $json = [
 //       "from" => "lazarevskoe",
 //       "to" => $number,
@@ -113,7 +113,7 @@ function OnOrderPaySendEmailHandler($id, $eventName, $arFields){
 
     $number = (int)preg_replace('/[^0-9]/', '', $user["PERSONAL_PHONE"]);
     $username = "CNT_lzrvsk";
-    $password = "70Me1PQb";
+    $password = "*******";
     $json = [
       "from" => "lazarevskoe",
       "to" => $number,
@@ -154,7 +154,7 @@ function OnOrderCancelSendEmailHandler($id, $eventName, $arFields){
 
     $number = (int)preg_replace('/[^0-9]/', '', $user["PERSONAL_PHONE"]);
     $username = "CNT_lzrvsk";
-    $password = "70Me1PQb";
+    $password = "*******";
     $json = [
       "from" => "lazarevskoe",
       "to" => $number,
@@ -195,7 +195,7 @@ function OnSaleStatusEMailHandler($id, $eventName, $arFields){
 
     $number = (int)preg_replace('/[^0-9]/', '', $user["PERSONAL_PHONE"]);
     $username = "CNT_lzrvsk";
-    $password = "70Me1PQb";
+    $password = "*******";
     $json = [
       "from" => "lazarevskoe",
       "to" => $number,
@@ -236,7 +236,7 @@ function OnSaleStatusEMailHandler($id, $eventName, $arFields){
 //
 //     $number = (int)preg_replace('/[^0-9]/', '', $user["PERSONAL_PHONE"]);
 //     $username = "CNT_lzrvsk";
-//     $password = "70Me1PQb";
+//     $password = "*******";
 //     $json = [
 //       "from" => "lazarevskoe",
 //       "to" => $number,
@@ -277,7 +277,7 @@ function OnSaleStatusEMailHandler($id, $eventName, $arFields){
 //
 //     $number = (int)preg_replace('/[^0-9]/', '', $user["PERSONAL_PHONE"]);
 //     $username = "CNT_lzrvsk";
-//     $password = "70Me1PQb";
+//     $password = "*******";
 //     $json = [
 //       "from" => "lazarevskoe",
 //       "to" => $number,
@@ -318,7 +318,7 @@ function OnSaleStatusEMailHandler($id, $eventName, $arFields){
 //
 //     $number = (int)preg_replace('/[^0-9]/', '', $user["PERSONAL_PHONE"]);
 //     $username = "CNT_lzrvsk";
-//     $password = "70Me1PQb";
+//     $password = "*******";
 //     $json = [
 //       "from" => "lazarevskoe",
 //       "to" => $number,
@@ -359,7 +359,7 @@ function OnSaleStatusEMailHandler($id, $eventName, $arFields){
 //
 //     $number = (int)preg_replace('/[^0-9]/', '', $user["PERSONAL_PHONE"]);
 //     $username = "CNT_lzrvsk";
-//     $password = "70Me1PQb";
+//     $password = "*******";
 //     $json = [
 //       "from" => "lazarevskoe",
 //       "to" => $number,
@@ -395,7 +395,7 @@ function OnAfterUserRegisterHandler($arFields){
 
     $number = (int)preg_replace('/[^0-9]/', '', $user["PERSONAL_PHONE"]);
     $username = "CNT_lzrvsk";
-    $password = "70Me1PQb";
+    $password = "*******";
     $json = [
       "from" => "lazarevskoe",
       "to" => $number,
